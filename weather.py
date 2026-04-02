@@ -1,6 +1,6 @@
 import requests
 
-# Senin API key
+
 API_KEY = "90e5f7a2117801f2db941acab81b46e2"
 
 
@@ -36,7 +36,7 @@ def get_weather(lat, lon):
         "lat": lat,
         "lon": lon,
         "appid": API_KEY,
-        "units": "metric"   # Celsius için
+        "units": "metric"   
     }
 
     response = requests.get(url, params=params)
